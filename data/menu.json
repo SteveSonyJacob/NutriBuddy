@@ -1,0 +1,328 @@
+{
+  "Monday": {
+    "Breakfast": [
+      {"name": "Vada Pav", "qty": 1},
+      {"name": "Puttu", "qty": 1},
+      {"name": "Channa Curry", "qty": 1},
+      {"name": "Fried Chillies", "qty": 1},
+      {"name": "Onions", "qty": 1},
+      {"name": "Green Chutney", "qty": 2},
+      {"name": "Red Powdered Chutney", "qty": 1},
+      {"name": "Bread", "qty": 2},
+      {"name": "Jam", "qty": 1},
+      {"name": "Butter", "qty": 1},
+      {"name": "Tea", "qty": 1},
+      {"name": "Milk", "qty": 1},
+      {"name": "Banana", "qty": 1}
+    ],
+    "Lunch": [
+      {"name": "Jeera Rice", "qty": 1},
+      {"name": "Rice", "qty": 1},
+      {"name": "Roti", "qty": 2},
+      {"name": "Potato Curry", "qty": 1},
+      {"name": "Beetroot Dry", "qty": 1},
+      {"name": "Mulaku Kondattam", "qty": 1},
+      {"name": "Rajma Curry", "qty": 1},
+      {"name": "Fryums", "qty": 1},
+      {"name": "Pulissery", "qty": 1},
+      {"name": "Curd", "qty": 1},
+      {"name": "Salad", "qty": 1},
+      {"name": "Seasonal Fruit", "qty": 1}
+    ],
+    "Snacks": [
+      {"name": "Bhelpuri", "qty": 1},
+      {"name": "Bread", "qty": 2},
+      {"name": "Jam", "qty": 1},
+      {"name": "Butter", "qty": 1},
+      {"name": "Tea", "qty": 1},
+      {"name": "Milk", "qty": 1}
+    ],
+    "Dinner": [
+      {"name": "Rice", "qty": 1},
+      {"name": "Roti", "qty": 2},
+      {"name": "Soya Chunk Fry", "qty": 1},
+      {"name": "Palak Dal Tadka", "qty": 1},
+      {"name": "Cabbage Chutney", "qty": 1},
+      {"name": "Pepper Rasam", "qty": 1},
+      {"name": "Chips", "qty": 1},
+      {"name": "Curd", "qty": 1},
+      {"name": "Salad", "qty": 1},
+      {"name": "Ada Payasam", "qty": 1}
+    ]
+  },
+  "Tuesday": {
+    "Breakfast": [
+      {"name": "Idli", "qty": 2},
+      {"name": "Masala Idli", "qty": 2},
+      {"name": "Punugulu", "qty": 4},
+      {"name": "Sambar", "qty": 1},
+      {"name": "Groundnut Chutney", "qty": 1},
+      {"name": "Tomato Chutney", "qty": 1},
+      {"name": "Bread", "qty": 2},
+      {"name": "Jam", "qty": 1},
+      {"name": "Butter", "qty": 1},
+      {"name": "Coffee", "qty": 1},
+      {"name": "Milk", "qty": 1}
+    ],
+    "Lunch": [
+      {"name": "Rice", "qty": 1},
+      {"name": "Roti", "qty": 2},
+      {"name": "Chole Curry", "qty": 1},
+      {"name": "Onion Dal Tadka", "qty": 1},
+      {"name": "Ivy Gourd Chutney", "qty": 1},
+      {"name": "Salad", "qty": 1},
+      {"name": "Curd", "qty": 1},
+      {"name": "Sweet Lassi", "qty": 1}
+    ],
+    "Snacks": [
+      {"name": "Masala Puri Chaat", "qty": 1},
+      {"name": "Bread", "qty": 2},
+      {"name": "Jam", "qty": 1},
+      {"name": "Butter", "qty": 1},
+      {"name": "Tea", "qty": 1},
+      {"name": "Milk", "qty": 1}
+    ],
+    "Dinner": [
+      {"name": "Rice", "qty": 1},
+      {"name": "Roti", "qty": 2},
+      {"name": "Egg Curry", "qty": 1},
+      {"name": "Dal Tadka", "qty": 1},
+      {"name": "Cabbage Carrot Thoran", "qty": 1},
+      {"name": "Vanpayar Aloo Curry", "qty": 1},
+      {"name": "Peanut Rasam", "qty": 1},
+      {"name": "Curd", "qty": 1},
+      {"name": "Papad", "qty": 1},
+      {"name": "Salad", "qty": 1},
+      {"name": "Pineapple Drink", "qty": 1}
+    ]
+  },
+  "Wednesday": {
+    "Breakfast": [
+      {"name": "Masala Uthappam", "qty": 1},
+      {"name": "Medu Vada", "qty": 2},
+      {"name": "Sambar", "qty": 1},
+      {"name": "Coconut Chutney", "qty": 2},
+      {"name": "Bread", "qty": 2},
+      {"name": "Jam", "qty": 1},
+      {"name": "Butter", "qty": 1},
+      {"name": "Coffee", "qty": 1},
+      {"name": "Banana", "qty": 1},
+      {"name": "Milk", "qty": 1}
+    ],
+    "Lunch": [
+      {"name": "Rice", "qty": 1},
+      {"name": "Roti", "qty": 2},
+      {"name": "Palak Dal Tadka", "qty": 1},
+      {"name": "Crunchy Bhindi Fry", "qty": 1},
+      {"name": "Rasam", "qty": 1},
+      {"name": "Papad", "qty": 1},
+      {"name": "Curd", "qty": 1},
+      {"name": "Salad", "qty": 1},
+      {"name": "Banana", "qty": 1},
+      {"name": "Buttermilk", "qty": 1}
+    ],
+    "Snacks": [
+      {"name": "Peanuts Chaat", "qty": 1},
+      {"name": "Bread", "qty": 2},
+      {"name": "Jam", "qty": 1},
+      {"name": "Butter", "qty": 1},
+      {"name": "Tea", "qty": 1},
+      {"name": "Milk", "qty": 1}
+    ],
+    "Dinner": [
+      {"name": "Fried Rice", "qty": 1},
+      {"name": "Roti", "qty": 2},
+      {"name": "Kadai Paneer", "qty": 1},
+      {"name": "Chilli Chicken", "qty": 1},
+      {"name": "Onion Chilli Raita", "qty": 1},
+      {"name": "Passion Fruit Drink", "qty": 1}
+    ]
+  },
+  "Thursday": {
+    "Breakfast": [
+      {"name": "Pav Bhaji", "qty": 1},
+      {"name": "Lemons", "qty": 1},
+      {"name": "Onions", "qty": 1},
+      {"name": "Uggani (Puffed Rice)", "qty": 1},
+      {"name": "Roasted Chana Podi", "qty": 1},
+      {"name": "Bread", "qty": 2},
+      {"name": "Jam", "qty": 1},
+      {"name": "Butter", "qty": 1},
+      {"name": "Banana", "qty": 1},
+      {"name": "Tea", "qty": 1},
+      {"name": "Milk", "qty": 1}
+    ],
+    "Lunch": [
+      {"name": "Roti", "qty": 2},
+      {"name": "Rice", "qty": 1},
+      {"name": "Egg Bhurji", "qty": 1},
+      {"name": "Mixed Vegetable Kurma", "qty": 1},
+      {"name": "Tomato Dal Tadka", "qty": 1},
+      {"name": "Chips", "qty": 1},
+      {"name": "Curd", "qty": 1},
+      {"name": "Salad", "qty": 1},
+      {"name": "Rasam", "qty": 1},
+      {"name": "Buttermilk", "qty": 1}
+    ],
+    "Snacks": [
+      {"name": "Veg Noodles", "qty": 1},
+      {"name": "Bread", "qty": 2},
+      {"name": "Jam", "qty": 1},
+      {"name": "Butter", "qty": 1},
+      {"name": "Tea", "qty": 1},
+      {"name": "Milk", "qty": 1}
+    ],
+    "Dinner": [
+      {"name": "Rice", "qty": 1},
+      {"name": "Roti", "qty": 2},
+      {"name": "Raw Banana Stir Fry", "qty": 1},
+      {"name": "Radish Chutney", "qty": 1},
+      {"name": "Spicy Dal Tadka", "qty": 1},
+      {"name": "Rasam", "qty": 1},
+      {"name": "Chips", "qty": 1},
+      {"name": "Curd", "qty": 1},
+      {"name": "Salad", "qty": 1},
+      {"name": "Vermicelli Payasam", "qty": 1}
+    ]
+  },
+  "Friday": {
+    "Breakfast": [
+      {"name": "Idli", "qty": 2},
+      {"name": "Masala Idli", "qty": 2},
+      {"name": "Medu Vada", "qty": 2},
+      {"name": "Groundnut Chutney", "qty": 1},
+      {"name": "Tomato Chutney", "qty": 1},
+      {"name": "Sambar", "qty": 1},
+      {"name": "Bread", "qty": 2},
+      {"name": "Jam", "qty": 1},
+      {"name": "Butter", "qty": 1},
+      {"name": "Coffee", "qty": 1},
+      {"name": "Milk", "qty": 1}
+    ],
+    "Lunch": [
+      {"name": "Rice", "qty": 1},
+      {"name": "Tomato Rice", "qty": 1},
+      {"name": "Roti", "qty": 2},
+      {"name": "Beans and Carrot Thoran", "qty": 1},
+      {"name": "Sambar", "qty": 1},
+      {"name": "Salad", "qty": 1},
+      {"name": "Curd", "qty": 1},
+      {"name": "Chips", "qty": 1},
+      {"name": "Chana Masala", "qty": 1},
+      {"name": "Seasonal Fruits", "qty": 1}
+    ],
+    "Snacks": [
+      {"name": "Kozhukkatta", "qty": 1},
+      {"name": "Bread", "qty": 2},
+      {"name": "Jam", "qty": 1},
+      {"name": "Butter", "qty": 1},
+      {"name": "Tea", "qty": 1},
+      {"name": "Milk", "qty": 1}
+    ],
+    "Dinner": [
+      {"name": "Rice", "qty": 1},
+      {"name": "Pulao", "qty": 1},
+      {"name": "Roti", "qty": 2},
+      {"name": "Chicken Masala", "qty": 1},
+      {"name": "Paneer Masala", "qty": 1},
+      {"name": "Curd", "qty": 1},
+      {"name": "Vegetable Raita", "qty": 1},
+      {"name": "Salad", "qty": 1},
+      {"name": "Lemon Sharbat", "qty": 1}
+    ]
+  },
+  "Saturday": {
+    "Breakfast": [
+      {"name": "Normal Upma", "qty": 1},
+      {"name": "Vermicelli Upma", "qty": 1},
+      {"name": "Sprouts", "qty": 1},
+      {"name": "Groundnut Chutney", "qty": 1},
+      {"name": "Mango Pickle", "qty": 1},
+      {"name": "Bread", "qty": 2},
+      {"name": "Jam", "qty": 1},
+      {"name": "Butter", "qty": 1},
+      {"name": "Banana", "qty": 1},
+      {"name": "Coffee", "qty": 1},
+      {"name": "Milk", "qty": 1}
+    ],
+    "Lunch": [
+      {"name": "Rice", "qty": 1},
+      {"name": "Roti", "qty": 2},
+      {"name": "Kerala Rice", "qty": 1},
+      {"name": "Ivy Gourd Fry", "qty": 1},
+      {"name": "Onam Kootukari", "qty": 1},
+      {"name": "Parippu Dal", "qty": 1},
+      {"name": "Beetroot Pachadi", "qty": 1},
+      {"name": "Bitter Gourd Kondattam", "qty": 1},
+      {"name": "Papad", "qty": 1},
+      {"name": "Curd", "qty": 1},
+      {"name": "Salad", "qty": 1},
+      {"name": "Buttermilk", "qty": 1}
+    ],
+    "Snacks": [
+      {"name": "Onion Vada", "qty": 2},
+      {"name": "Bread", "qty": 2},
+      {"name": "Jam", "qty": 1},
+      {"name": "Butter", "qty": 1},
+      {"name": "Tea", "qty": 1},
+      {"name": "Milk", "qty": 1}
+    ],
+    "Dinner": [
+      {"name": "Roti", "qty": 2},
+      {"name": "Rice", "qty": 1},
+      {"name": "Rasam", "qty": 1},
+      {"name": "Potato Roast", "qty": 1},
+      {"name": "Horse Gram Chutney", "qty": 1},
+      {"name": "Onion Dal Tadka", "qty": 1},
+      {"name": "Curd", "qty": 1},
+      {"name": "Salad", "qty": 1},
+      {"name": "Fryums", "qty": 1},
+      {"name": "Lychee Drink", "qty": 1}
+    ]
+  },
+  "Sunday": {
+    "Breakfast": [
+      {"name": "Puri Masala", "qty": 1},
+      {"name": "Pongal", "qty": 1},
+      {"name": "Groundnut Chutney", "qty": 1},
+      {"name": "Banana", "qty": 1},
+      {"name": "Boiled Egg", "qty": 1},
+      {"name": "Sprouts", "qty": 1},
+      {"name": "Bread", "qty": 2},
+      {"name": "Jam", "qty": 1},
+      {"name": "Tea", "qty": 1},
+      {"name": "Milk", "qty": 1}
+    ],
+    "Lunch": [
+      {"name": "Rice", "qty": 1},
+      {"name": "Roti", "qty": 2},
+      {"name": "Bhindi Masala Curry", "qty": 1},
+      {"name": "Tomato Dal Tadka", "qty": 1},
+      {"name": "Curd", "qty": 1},
+      {"name": "Salad", "qty": 1},
+      {"name": "Coriander Tomato Chutney", "qty": 1},
+      {"name": "Chips", "qty": 1},
+      {"name": "Sweet Lassi", "qty": 1}
+    ],
+    "Snacks": [
+      {"name": "Mirchi Bajji", "qty": 1},
+      {"name": "Cream Bun", "qty": 1},
+      {"name": "Bread", "qty": 2},
+      {"name": "Jam", "qty": 1},
+      {"name": "Butter", "qty": 1},
+      {"name": "Tea", "qty": 1},
+      {"name": "Milk", "qty": 1}
+    ],
+    "Dinner": [
+      {"name": "Chicken Biryani", "qty": 1},
+      {"name": "Paneer Biryani", "qty": 1},
+      {"name": "Veg Gravy", "qty": 1},
+      {"name": "Chicken Gravy", "qty": 1},
+      {"name": "Boondi Raita", "qty": 1},
+      {"name": "Onion Chilli Raita", "qty": 1},
+      {"name": "Papad", "qty": 1},
+      {"name": "Salad", "qty": 1},
+      {"name": "Rooh Afza", "qty": 1}
+    ]
+  }
+}
