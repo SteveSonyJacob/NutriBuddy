@@ -1,6 +1,6 @@
 import os
 import json
-from api_data import fetch_from_api  # your API function
+from api_data import fetch_from_api
 
 # Load local nutrition DB
 try:
@@ -35,5 +35,6 @@ def get_nutrition_for(food_name, grams):
         factor = grams / 100
         return {k: v * factor for k,v in nutr_100g.items()}
     else:
-        # Not in DB → fetch from Nutritionix API with exact amount
-        return fetch_from_api(food_name, grams=grams)
+        # Not in DB → return zero nutrition (API disabled due to invalid credentials)
+        print(f"Food '{food_name}' not found in local database.")
+        return {"calories": 0, "protein": 0, "carbs": 0, "fat": 0}

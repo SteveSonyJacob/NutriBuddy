@@ -5,19 +5,11 @@ from daily_tracker import DailyTracker
 from nutrition import estimate_grams, get_nutrition_for
 from api_data import fetch_from_api  # Nutritionix API
 
-# Load menu
-try:
-    with open("data/menu.json", "r") as f:
+with open("data/menu.json", "r") as f:
         MENU = json.load(f)
-except FileNotFoundError:
-    st.error("❌ Menu data file not found. Please ensure 'data/menu.json' exists.")
-    st.stop()
-except json.JSONDecodeError:
-    st.error("❌ Invalid JSON in menu data file. Please check 'data/menu.json' format.")
-    st.stop()
 
 st.set_page_config(page_title="Mess Nutrition Tracker", layout="centered")
-st.title("🍽️ Mess Nutrition Tracker")
+st.title("🍽 Mess Nutrition Tracker")
 
 # Initialize tracker
 if "tracker" not in st.session_state:
@@ -30,7 +22,7 @@ selected_day = st.selectbox(
     index=list(MENU.keys()).index(weekday) if weekday in MENU else 0
 )
 
-st.markdown(f"### Menu for **{selected_day}**")
+st.markdown(f"### Menu for {selected_day}")
 
 # Meal tracking with partial consumption
 for meal_name, items in MENU[selected_day].items():
@@ -53,35 +45,60 @@ for meal_name, items in MENU[selected_day].items():
             with col1:
                 new_name = st.text_input(
                     f"Item {i+1}", value=it['name'], 
-                    key=f"{selected_day}_{meal_name}_name_{i}"
+                    key=f"{selected_day}{meal_name}_name{i}"
                 )
             with col2:
-                qty = st.number_input(
-                    "Qty", min_value=0.0, value=float(it.get('qty', 1.0)),
-                    step=0.5, key=f"{selected_day}_{meal_name}_qty_{i}"
+                unit_choice = st.radio(
+                    "Amount type",
+                    ("Quantity", "Grams"),
+                    key=f"unit_{selected_day}{meal_name}_{i}",
+                    horizontal=True
                 )
             with col3:
                 include = st.checkbox(
                     "Include?", value=True, 
-                    key=f"include_{selected_day}_{meal_name}_{i}"
+                    key=f"include_{selected_day}{meal_name}{i}"
                 )
 
-            if include and qty > 0:
-                grams_final = estimate_grams(new_name, qty)
-                nutr = get_nutrition_for(new_name, grams_final)
-                st.write(
-                    f"{grams_final} g → "
-                    f"{round(nutr['calories'],1)} kcal, "
-                    f"P:{round(nutr['protein'],1)}g "
-                    f"C:{round(nutr['carbs'],1)}g "
-                    f"F:{round(nutr['fat'],1)}g"
-                )
-                if st.button(
-                    f"Add {new_name} to today's intake", 
-                    key=f"add_{selected_day}_{meal_name}_{i}"
-                ):
-                    st.session_state.tracker.add_item(new_name, grams_final, nutr)
-                    st.success(f"Added {new_name} — {int(grams_final)}g")
+            if include:
+                # Input for quantity/grams depending on selection
+                if unit_choice == "Quantity":
+                    qty = st.number_input(
+                        "Qty", min_value=0.0, value=float(it.get('qty', 1.0)),
+                        step=0.5, key=f"{selected_day}{meal_name}_qty{i}"
+                    )
+                    grams_final = estimate_grams(new_name, qty)
+                    if grams_final > 0:
+                        st.caption(f"≈ {grams_final:.0f} g")
+                else:
+                    grams_final = st.number_input(
+                        "Grams", min_value=0.0,
+                        value=estimate_grams(new_name, float(it.get('qty', 1.0))),
+                        step=10.0,
+                        key=f"{selected_day}{meal_name}_grams{i}"
+                    )
+
+                if grams_final > 0:
+                    nutr = get_nutrition_for(new_name, grams_final)
+                    if nutr == {"calories":0,"protein":0,"carbs":0,"fat":0}:
+                        with st.spinner(f"Fetching nutrition info for {new_name}..."):
+                            nutr = fetch_from_api(new_name, grams_final)
+                    if nutr is None:
+                        st.error(f"❌ Could not fetch data for '{new_name}'.")
+                    else:
+                        st.write(
+                            f"📊 {grams_final:.0f} g → "
+                            f"{round(nutr['calories'],1)} kcal, "
+                            f"P:{round(nutr['protein'],1)}g "
+                            f"C:{round(nutr['carbs'],1)}g "
+                            f"F:{round(nutr['fat'],1)}g"
+                        )
+                        if st.button(
+                            f"Add {new_name} to today's intake", 
+                            key=f"add_{selected_day}{meal_name}{i}"
+                        ):
+                            st.session_state.tracker.add_item(new_name, grams_final, nutr)
+                            st.success(f"Added {new_name} — {int(grams_final)}g")
 
 st.markdown("---")
 

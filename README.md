@@ -4,7 +4,7 @@ A comprehensive nutrition tracking application for mess/canteen meal planning an
 
 ## Features
 
-- **Weekly Menu Planning**: Pre-loaded with comprehensive weekly meal menus
+- **Weekly Menu**: Pre-loaded with comprehensive weekly meal menus
 - **Nutrition Tracking**: Track calories, protein, carbs, and fat for each meal
 - **Portion Control**: Adjust quantities and portions for accurate tracking
 - **API Integration**: Uses Nutritionix API for detailed nutrition information
